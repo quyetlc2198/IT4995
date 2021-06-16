@@ -20,7 +20,7 @@ class RoomAdmin(admin.ModelAdmin):
     list_editable = ['category']
     list_filter = ['category']
     search_fields=['category','name']
-    fields = ('name',('category', 'price'), 'image', 'description')
+    fields = ('name','category', 'image', 'description')
     change_list_template = 'admin/change_list_graph.html'
 
 admin.site.register(Rooms,RoomAdmin)
